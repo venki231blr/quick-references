@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+  csharp:
+    build:
+      context: .
+    container_name: csharp
+    image: venki231/csharp:0.0.3
+    ports:
+    - 5000:5000
+    volumes:
+    - ./src/:/work
+    # working_dir: /work
+    # entrypoint: /bin/bash
+    # stdin_open: true
+    # tty: true
